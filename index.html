@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài tập 22 & 23 - Trang chủ</title>
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;font-family:Arial,Helvetica,sans-serif;
+    color:#f8fafc;
+    background:radial-gradient(circle at top,#263a62,#101522 60%);
+    min-height:100vh
+}
+header{
+    text-align:center;
+    padding:58px 20px 28px
+}
+header .eyebrow{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#93c5fd;
+    font-size:.8rem
+}
+h1{
+    font-size:clamp(2rem,5vw,3.4rem);
+    margin:12px 0
+}
+header p{
+    color:#cbd5e1;
+    max-width:650px;
+    margin:0 auto;
+    line-height:1.7
+}
+main{
+    max-width:1000px;
+    margin:20px auto 70px;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:24px
+}
+.card{
+    background:#1b2436;
+    border:1px solid #34445f;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 18px 45px #0004;
+    display:flex;
+    flex-direction:column
+}
+.preview{
+    height:220px;
+    background:#0b1020;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden
+}
+.preview img{
+    width:100%;height:100%;object-fit:cover
+}
+.preview .lantern{
+    font-size:110px;filter:drop-shadow(0 0 18px #fbbf24)
+}
+.content{
+    padding:24px;display:flex;flex-direction:column;flex:1
+}
+.content .tag{
+    color:#93c5fd;text-transform:uppercase;letter-spacing:2px;font-size:.75rem
+}
+.content h2{margin:10px 0}
+.content p{color:#cbd5e1;line-height:1.65;flex:1}
+.link{
+    display:inline-block;
+    text-decoration:none;
+    text-align:center;
+    background:#60a5fa;
+    color:#081426;
+    padding:13px 18px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.2s
+}
+.link:hover{background:#bfdbfe;transform:translateY(-2px)}
+footer{text-align:center;padding:20px;color:#94a3b8;font-size:.9rem}
+</style>
+</head>
+<body>
+<header>
+    <div class="eyebrow">Bài tập 23</div>
+    <h1>231A010561</h1>
+    <p>Chọn một nội dung bên dưới để xem kết quả bài trắc nghiệm và hiệu ứng đèn kéo quân được lập trình bằng HTML, CSS và JavaScript.</p>
+</header>
+<main>
+<section class="card">
+    <div class="preview">
+        <img src="images/ket-qua-bai-22.png" alt="Ảnh kết quả bài tập 22">
+    </div>
+    <div class="content">
+        <div class="tag">Bài tập 22</div>
+        <h2>Kết quả trắc nghiệm</h2>
+        <p>Hình ảnh chụp màn hình kết quả bài Quizizz: 78 câu đúng trên tổng số 100 câu hỏi.</p>
+        <a class="link" href="images/ket-qua-bai-22.png" target="_blank" rel="noopener">Xem hình kết quả</a>
+    </div>
+</section>
+<section class="card">
+    <div class="preview">
+        <div class="lantern">🏮</div>
+    </div>
+    <div class="content">
+        <div class="tag">Bài tập 23</div>
+        <h2>Đèn kéo quân</h2>
+        <p>Xem sáu ảnh cá nhân được bố trí quanh đèn 3D đang xoay. Di chuột lên ảnh để tạm dừng, rê chuột ra ngoài để tiếp tục quay.</p>
+        <a class="link" href="den-keo-quan.html">Mở đèn kéo quân</a>
+    </div>
+</section>
+</main>
+<footer>Thiết kế bằng HTML, CSS và JavaScript · Có thể triển khai trực tiếp lên Github</footer>
+</body>
+</html>
